@@ -7,13 +7,6 @@
 
 This application allows the user to search for books.
 
-## Installation Instructions
-
-* Fork the repository
-* run `npm i` to get all needed packages
-* run `npm run build` 
-* run `npm run deploy`
-
 ## License
 
   This project is licensed under the terms of the MIT license.  
