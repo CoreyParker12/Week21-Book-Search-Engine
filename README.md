@@ -10,9 +10,8 @@ This application allows the user to search for books.
 ## Installation Instructions
 
 * Fork the repository
-* run `npm i` to get all needed packages
-* run `npm run build` 
-* run `npm run deploy`
+* run `npm i` to get all needed packages 
+* run `npm run develop`
 
 ## License
 
@@ -26,5 +25,5 @@ Email: coreyparker012@gmail.com
 
 ## Homepage
 
-![Homepage](Develop/client/public/book-search-pic.JPG)
+![Homepage](client/public/book-search-pic.JPG)
 
