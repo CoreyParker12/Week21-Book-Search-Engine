@@ -1,10 +1,23 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
+const mongoose = require('mongoose');
+
 
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 const db = require('./config/connection');
+
+
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/booksearch',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  },
+);
 
 const PORT = process.env.PORT || 3001;
 const app = express();
